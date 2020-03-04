@@ -1,0 +1,39 @@
+<div class="col-md-6 user-container">
+  <!--<div><button>Logout</button></div> ako je prijavljen da idem logOut-->
+ <h2 class="text-center">Add User</h2>
+
+ <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input formControlName="firstName" placeholder="First Name" 
+      name="firstName" class="form-control" id="firstName">
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input formControlName="lastName" placeholder="Last name"
+       name="lastName" class="form-control" id="lastName">
+    </div>
+
+   <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="text" formControlName="email" placeholder="email@example.com"
+       name="email" class="form-control" id="email">
+    </div>
+
+   <div class="form-group">
+     <label for="password">Password:</label>
+     <input type="password" formControlName="password" 
+     placeholder="password" name="password" class="form-control" id="password">
+   </div>
+
+   <div class="form-group">
+     <label for="age">Age:</label>
+     <input type="number" formControlName="age" placeholder="age"
+      name="age" class="form-control" id="age">
+   </div>
+
+   <button class="btn btn-success">Add User</button>
+ </form>
+
+</div>
